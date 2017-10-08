@@ -21,4 +21,8 @@ my_family = {
     }
 }
 
-puts "#{my_family[:name]}"
+my_family.each do |key, value|
+    # puts "#{key}, #{value}, #{taco}"
+    # puts "- is my #{key}, she is -"
+    puts "#{value[:name]} is my #{key} and is #{value[:age]} years old."
+end
